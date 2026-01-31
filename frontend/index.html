@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsightIQ - TikTok Audit</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔍 TikTok Growth Audit</h1>
+            <p class="subtitle">Get professional insights to boost your TikTok growth</p>
+        </header>
+        
+        <div class="audit-form">
+            <h2>Analyze Your TikTok Account</h2>
+            <p class="form-description">Enter your TikTok username below. We'll analyze your account and provide a detailed report with actionable insights.</p>
+            
+            <div class="input-group">
+                <input type="text" id="username" placeholder="@username" required>
+                <input type="email" id="email" placeholder="your@email.com" required>
+            </div>
+            
+            <button id="audit-btn" onclick="startAudit()">
+                <span class="btn-text">Get Audit for $9.99</span>
+                <span class="btn-loading" style="display: none;">Processing...</span>
+            </button>
+            
+            <div class="features">
+                <h3>What's Included:</h3>
+                <div class="feature-grid">
+                    <div class="feature">
+                        <div class="feature-icon">🔍</div>
+                        <h4>Shadowban Detection</h4>
+                        <p>Check if TikTok is hiding your content</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">📈</div>
+                        <h4>Engagement Analysis</h4>
+                        <p>Detailed engagement metrics & benchmarks</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">⏰</div>
+                        <h4>Optimal Posting Times</h4>
+                        <p>Best times to post for your audience</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🎯</div>
+                        <h4>Growth Strategies</h4>
+                        <p>Actionable tips to increase views</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="testimonials">
+            <h3>Trusted by TikTok Creators</h3>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"Increased my views by 300% after following their advice!"</p>
+                    <span class="author">- @CreativityQueen</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Finally understood why my videos weren't going viral."</p>
+                    <span class="author">- @GrowthGuru</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Worth every penny. The PDF report was incredibly detailed."</p>
+                    <span class="author">- @ContentKing</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
