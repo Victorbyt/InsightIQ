@@ -123,6 +123,7 @@ async def get_audits():
 async def download_pdf(filename: str):
     return FileResponse(f"static/pdfs/{filename}", media_type='application/pdf')
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+port = int(os.environ.get("PORT", 8080))
+    host = "0.0.0.0"
+    
+    uvicorn.run(app, host=host, port=port)
