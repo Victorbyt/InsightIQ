@@ -1,0 +1,3 @@
+language = "python3"
+run = "cd backend && python main.py"language = "python3"
+run = "cd backend && python main.py"
